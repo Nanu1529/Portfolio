@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <style>
+        .contact-container {
+            display: flex;
+            flex-direction: column; /* Arrange items vertically */
+            align-items: center; /* Center horizontally */
+            padding: 40px;
+            background-color: #f8f8f8; /* Light background color */
+            font-family: sans-serif;
+        }
+
+        .contact-heading {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333; /* Darker heading color */
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column; /* Stack info items vertically */
+            gap: 15px; /* Space between items */
+            text-align: center; /* Center text within info items */
+        }
+
+        .contact-item {
+            display: flex; /* Use flexbox for icon and text */
+            align-items: center; /* Vertically align icon and text */
+            gap: 10px; /* Space between icon and text */
+        }
+
+        .contact-icon {
+            font-size: 1.5em; /* Adjust icon size */
+            color: #555; /* Icon color */
+        }
+
+        .contact-link {
+            color: #007bff; /* Blue link color */
+            text-decoration: none; /* Remove underlines from links */
+            transition: color 0.2s ease; /* Smooth color transition */
+        }
+
+        .contact-link:hover {
+            color: #0056b3; /* Darker blue on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            width: 100%; /* Full width on smaller screens */
+            max-width: 500px; /* Limit width on larger screens */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block; /* Label above input */
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-input, .form-textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding in width */
+        }
+
+        .form-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .form-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive adjustments (example) */
+        @media (max-width: 500px) {
+            .contact-form {
+                max-width: 90%; /* Adjust form width for very small screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="contact-container">
+        <h2 class="contact-heading">Contact Me</h2>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-icon">&#9993;</span>  <a class="contact-link" href="ritikpatyalnanu@gmail.com">ritikpatyalnanu@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">&#9742;</span>  <a class="contact-link" href="tel:+91 7018005347">+91 7018005347</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">&#128205;</span> <span class="contact-text">Himachal Pradesh</span>
+            </div>
+            </div>
+
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="form-button">Send Message</button>
+        </form>
+
+    </section>
+
+</body>
+</html>

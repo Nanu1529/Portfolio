@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 1rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+        }
+
+        #home {
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+            height: 546px; /* Set height */
+            width: 768px; /* Set width */
+            margin: 0 auto; /* Center horizontally */
+            background-color: #fff; /* Add background color to home section */
+            border-radius: 5px; /* Add rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+        
+        #home:hover{
+            transform: scale(1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-picture {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 2rem;
+        }
+   
+        .profile-picture:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-info {
+            flex: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info:hover {
+            transform: scale(1.05);
+        }
+         /* Your existing CSS styles here */
+        .social-icons {
+            display: flex;
+        }
+
+        .social-icons a {
+            margin: 0 0.5rem;
+            color: #fff; 
+        }
+
+        .social-icons a:hover {
+            opacity: 0.7; 
+        }
+
+        .social-icons a i {
+            font-size: 1.5rem;
+        }
+
+        /* ... (Add styling for other sections if needed) ... */
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-name">Ritik Patyal</div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="example.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons"> 
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> 
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </nav>
+    <section id="home">
+        <img src="IMG_0456.JPG" alt="Your Profile Picture" class="profile-picture">
+        <div class="contact-info">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with a strong focus on creating user-friendly and visually appealing websites. I have a solid understanding of HTML, CSS, JavaScript, and other front-end technologies.</p>
+        </div>
+    </section>
+
+    </body>
+</html>

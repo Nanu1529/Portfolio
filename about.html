@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .portfolio-container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .portfolio-section {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-section h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            transition: color 0.3s ease; /* Heading hover effect */
+        }
+
+        .portfolio-section h2:hover {
+            color: #0056b3;
+        }
+
+        .portfolio-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Portfolio item hover effects */
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            background-color: #f9f9f9;
+        }
+
+        .portfolio-item img {
+            max-width: 200px;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .portfolio-item h3 {
+            margin-top: 0;
+        }
+
+        .portfolio-item p {
+            text-align: justify;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Skills list hover effect */
+        .portfolio-section ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+        }
+
+        .portfolio-section ul li {
+            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-bottom: 5px; /* Add some spacing between list items */
+        }
+
+        .portfolio-section ul li:hover {
+            background-color: #e0e0e0;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+
+        @media (max-width: 768px) {
+            .portfolio-container {
+                padding: 10px;
+            }
+            .portfolio-item img {
+                float: none;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-container">
+
+        <section class="portfolio-section" id="projects">
+            <h2>Projects</h2>
+
+            <div class="portfolio-item clearfix">
+                <img src="joshua-aragon-BMnhuwFYr7w-unsplash.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Description of project 1. This is an example description.  It should be detailed and explain the project's purpose, technologies used, and your role.</p>
+            </div>
+
+            <div class="portfolio-item clearfix">
+                <img src="resumes-desk.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Description of project 2.  This is another example.  Make sure to replace the placeholder text and images with your actual project details.</p>
+            </div>
+
+        </section>
+
+        <section class="portfolio-section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+            </ul>
+        </section>
+
+        <section class="portfolio-section" id="contact">
+            <h2>Contact</h2>
+            <p>Email: ritikpatyalnanu@gmail.com</p>
+            <p>0123456789</p>
+        </section>
+
+    </div>
+
+</body>
+</html>

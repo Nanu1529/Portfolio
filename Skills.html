@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body, html {
+            height: 100%; /* Make body and html take full viewport height */
+            margin: 0; /* Remove default margins */
+            font-family: sans-serif; /* Choose a font */
+            background-color: #f4f4f4; /* Set a background color */
+            display: flex;
+            flex-direction: column; /* Ensure content flows vertically */
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            gap: 20px; /* Space between skill items */
+            padding: 20px;
+            flex-grow: 1; /* Allow the container to expand to fill available space */
+            min-height: 0; /* Fix potential min-height issues */
+        }
+
+        .skill-item {
+            width: 250px; /* Adjust as needed */
+            height: 250px; /* Adjust as needed */
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .skill-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .skill-item:hover .skill-overlay {
+            opacity: 1;
+        }
+
+        .skill-title {
+            font-size: 1.4em; /* Increased font size */
+            margin-bottom: 10px;
+        }
+
+        .skill-description {
+            font-size: 1em; /* Increased font size */
+            text-align: center;
+            padding: 0 15px; /* Added padding */
+            line-height: 1.4; /* Improved readability */
+        }
+
+
+        /* Optional: Add a header or footer */
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Skills</h1>  </header>
+
+    <section id="skills" class="skills-container">
+        <div class="skill-item">
+            <img class="skill-image" src="PgcSR.png" alt="HTML">
+            <div class="skill-overlay">
+                <h3 class="skill-title">HTML</h3>
+                <p class="skill-description">Proficient in semantic HTML5 and web accessibility.</p>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <img class="skill-image" src="images.png" alt="CSS">
+            <div class="skill-overlay">
+                <h3 class="skill-title">CSS</h3>
+                <p class="skill-description">Skilled in responsive design and preprocessors like Sass.</p>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <img class="skill-image" src="python-icon-2048x2048-z7czo6jm.png" alt="JavaScript">
+            <div class="skill-overlay">
+                <h3 class="skill-title">Python</h3>
+                <p class="skill-description">Using the Python programming language to develop both the front-end and back-end components of a web application.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body, html {
+            height: 100%; /* Make body and html take full viewport height */
+            margin: 0; /* Remove default margins */
+            font-family: sans-serif; /* Choose a font */
+            background-color: #f4f4f4; /* Set a background color */
+            display: flex;
+            flex-direction: column; /* Ensure content flows vertically */
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f4f4f4; /* Light background color */
+        }
+
+        .service {
+            width: 300px; /* Adjust width as needed */
+            margin: 20px;
+            border-radius: 8px;
+            overflow: hidden; /* Hide image overflow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.3s ease; /* Smooth transform */
+        }
+
+        .service:hover {
+            transform: translateY(-5px); /* Move up on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+        }
+
+        .service img {
+            width: 90%;
+            height: 200px; /* Adjust height as needed */
+            object-fit: cover; /* Cover the entire area */
+            display: block; /* Prevents small space below image */
+        }
+
+        .service-content {
+            padding: 20px;
+            background-color: #fff; /* White background for content */
+        }
+
+        .service h3 {
+            margin-bottom: 10px;
+            color: #333; /* Darker heading color */
+        }
+
+        .service p {
+            color: #666; /* Lighter text color */
+            line-height: 1.6;
+        }
+
+        /* Responsive adjustments (example) */
+        @media (max-width: 768px) {
+            .service {
+                width: 80%; /* Full width on smaller screens */
+                margin: 15px auto; /* Center the services */
+            }
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Services</h1>  </header>
+
+    <section id="services" class="services-container">
+
+        <div class="service">
+            <img src="images (1).png" alt="Service 1">
+            <div class="service-content">
+                <h3>Web Design</h3>
+                <p>Crafting beautiful and responsive websites tailored to your business needs.  We focus on user experience and modern design principles.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="web-development-icon-trendy-flat-vector-white-background-programming-collection-illustration-can-be-use-mobile-eps-130326341.webp" alt="Service 2">
+            <div class="service-content">
+                <h3>Web Development</h3>
+                <p>Building robust and scalable web applications using the latest technologies. From front-end to back-end, we handle it all.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="836cd27d3bf3d81122d089088f60d60f.jpg" alt="Service 3">
+            <div class="service-content">
+                <h3>Digital Marketing</h3>
+                <p>Driving targeted traffic to your website through effective SEO, social media marketing, and paid advertising campaigns.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="istockphoto-1164369348-612x612.jpg" alt="Service 4">
+            <div class="service-content">
+                <h3>Graphic Design</h3>
+                <p>Creating visually appealing designs for logos, brochures, and other marketing materials. We help you establish a strong brand identity.</p>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
